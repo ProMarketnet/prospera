@@ -1,0 +1,1 @@
+# Chat module for AI Agent interactions
