@@ -1,0 +1,192 @@
+{
+  "industry": "agriculture",
+  "timestamp": "2025-06-09T19:45:08.292531",
+  "trends": [
+    {
+      "source": "https://www.agriculture.com/",
+      "headlines": [
+        "Top Picks",
+        "Machinery",
+        "Farmland",
+        "Follow Us"
+      ],
+      "scraped_at": "2025-06-09T19:45:08.512216",
+      "content_preview": "Meet the Minnesota Farmer Pushing Back on Anti-Sugar Rhetoric and Advocating for a Fair Farm Bill Corn and Wheat in the Red | Monday, June 9, 2025 3 Big Things Today, June 9, 2025 U.S. Trade Deficit Narrows by 55% in April Experts Doubt FBI\u2019s Claim That Crop Fungus Smuggled by Chinese Students Is a Threat Top Picks Pork Policy and Progress: Insights from World Pork Expo 2025 Grains Powerhouse Argentina Could Lose Market Share Due to Vietnam-U.S. Trade Deal, Rosario Exchange Warns Beef, Pork Expo"
+    },
+    {
+      "source": "https://www.farm-equipment.com/",
+      "headlines": [
+        "Channels",
+        "Who Brought Out YOUR Very Best?",
+        "Farm Equipment News",
+        "K-Hart Industries Expands Dealer Network in Saskatchewan",
+        "Parallel Ag Agreement as Claas Interim Dealership Comes to a Close",
+        "Farm Equipment's Best of the Web: June 6, 2025",
+        "Loftness Mourns the Loss of Territory Manager Eddie Morton",
+        "Must Read Free Eguides",
+        "Free Newsletters",
+        "This month's digital sponsors:"
+      ],
+      "scraped_at": "2025-06-09T19:45:10.955562",
+      "content_preview": "Farm Equipment\nFarm Equipment's 100TM\n100 North America's Largest Ag Equipment Dealers\nDownload these helpful knowledge building tools\nStart with these information-packed articles hand-picked by our editors:\nFarm Equipment's \u201cBoots on the Ground\u201d series gathers insights and best practices from a highly-successful dealership \u2014 4-store Deere operation Alliance Tractor \u2014 and brings them to our dealer audience in focused, seasonal print and digital articles that cover the company\u2019s successes and cha"
+    }
+  ],
+  "news": [
+    {
+      "title": "Successful Farming",
+      "description": "",
+      "url": "https://www.agriculture.com//",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222824",
+      "relevance_score": 0.7
+    },
+    {
+      "title": "Crop News",
+      "description": "",
+      "url": "https://www.agriculture.com/news/crops",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222907",
+      "relevance_score": 0.4
+    },
+    {
+      "title": "Skip to content",
+      "description": "",
+      "url": "https://www.agriculture.com/#main",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222785",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Subscribe",
+      "description": "",
+      "url": "https://w1.buysub.com/pubs/MR/SFG/Qualification-Page-7.jsp?cds_page_id=166174&cds_mag_code=SFG&id=1518545414171&lsid=80441202089035428&vid=4&cds_response_key=I47GOON62",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222838",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Manage Your Subscription",
+      "description": "",
+      "url": "https://w1.buysub.com/servlet/CSGateway?cds_mag_code=SFG",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222848",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Get Help",
+      "description": "",
+      "url": "https://w1.buysub.com/servlet/CSGateway?cds_mag_code=SFG",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222858",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Newsletters",
+      "description": "",
+      "url": "https://www.agriculture.com/#",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222868",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Subscribe",
+      "description": "",
+      "url": "https://w1.buysub.com/pubs/MR/SFG/Qualification-Page-7.jsp?cds_page_id=166174&cds_mag_code=SFG&id=1518545414171&lsid=80441202089035428&vid=4&cds_response_key=I47GOON62",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222878",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "News",
+      "description": "",
+      "url": "https://www.agriculture.com/news",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222889",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Business News",
+      "description": "",
+      "url": "https://www.agriculture.com/news/business",
+      "source": "www.agriculture.com",
+      "published_at": "2025-06-09T19:45:15.222898",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Dealers on the Move",
+      "description": "",
+      "url": "https://www.farm-equipment.com//topics/400-dealers-on-the-move",
+      "source": "www.farm-equipment.com",
+      "published_at": "2025-06-09T19:45:17.595568",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Best Practices",
+      "description": "",
+      "url": "https://www.farm-equipment.com//topics/391-best-practices",
+      "source": "www.farm-equipment.com",
+      "published_at": "2025-06-09T19:45:17.595595",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Used Equipment Remarketing",
+      "description": "",
+      "url": "https://www.farm-equipment.com//topics/2268-used-equipment-remarketing",
+      "source": "www.farm-equipment.com",
+      "published_at": "2025-06-09T19:45:17.595606",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Manufacturer & Dealer Issues",
+      "description": "",
+      "url": "https://www.farm-equipment.com//topics/390-manufacturer-dealer-issues",
+      "source": "www.farm-equipment.com",
+      "published_at": "2025-06-09T19:45:17.595616",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Data & Forecasts",
+      "description": "",
+      "url": "https://www.farm-equipment.com//topics/392-data-forecasts",
+      "source": "www.farm-equipment.com",
+      "published_at": "2025-06-09T19:45:17.595626",
+      "relevance_score": 0.0
+    }
+  ],
+  "leads": [
+    {
+      "company_name": "Farm Equipment's \u201cBoots on the Ground\u201d series gathers insights and best practices from a highly-successful dealership \u2014 4-store Deere operation Alliance Tractor \u2014 and brings them to our dealer audience in focused, seasonal print and digital articles that cover the company\u2019s successes and challenges throughout 2024, from all departments (sales, parts, service and precision).",
+      "source": "https://www.farm-equipment.com/",
+      "discovered_at": "2025-06-09T19:45:23.971301",
+      "lead_score": 5,
+      "industry_match": true
+    },
+    {
+      "company_name": "The Farm Equipment Dealer 100\u2122 (a ranking of the top 100 North American farm equipment dealers \u2014 by number of locations) provides information on total and ag stores, brands, geographies served, employees, history, executives and ownership/company profile information.",
+      "source": "https://www.farm-equipment.com/",
+      "discovered_at": "2025-06-09T19:45:23.971325",
+      "lead_score": 10,
+      "industry_match": true
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Leading Agriculture Company",
+      "market_position": "Strong Player",
+      "estimated_size": "Large",
+      "focus_area": "agriculture",
+      "competitive_score": 9,
+      "discovered_via": "Industry Analysis",
+      "last_updated": "2025-06-09T19:45:27.987969"
+    },
+    {
+      "name": "Leading Farming Company",
+      "market_position": "Emerging Competitor",
+      "estimated_size": "Small",
+      "focus_area": "farming",
+      "competitive_score": 9,
+      "discovered_via": "Industry Analysis",
+      "last_updated": "2025-06-09T19:45:27.988002"
+    }
+  ]
+}

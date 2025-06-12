@@ -1,0 +1,209 @@
+{
+  "industry": "fashion_apparel",
+  "timestamp": "2025-06-08T16:29:33.423862",
+  "trends": [
+    {
+      "source": "https://wwd.com/",
+      "headlines": [
+        "Casablanca\u2019s First Store in Paris Has a Marble Tennis Court and Ancient Greek\u00a0Flair",
+        "Louis Vuitton Has a New SVP, Image and\u00a0Communications",
+        "Fashion Design Students Show Off Their Final Runway\u00a0Looks",
+        "Assessing the Opportunities and Barriers in Developing Designer\u00a0Fragrances",
+        "Alberta Ferretti Resort 2026: Romance in the\u00a0City",
+        "Chow Tai Fook to Launch High Jewelry Collection in\u00a0Hangzhou",
+        "Eye",
+        "Tania Sarin Welcomes Friends to Celebrate Anastasio\u2026",
+        "For Tony Award Winner Kara Young, \u2018Purpose\u2026",
+        "Annie Shi Opens Lei, a Wine Bar, on Doyers\u00a0Street"
+      ],
+      "scraped_at": "2025-06-08T16:29:36.262714",
+      "content_preview": "Casablanca\u2019s First Store in Paris Has a Marble Tennis Court and Ancient Greek Flair\nCasablanca is shaking up the Rue du Faubourg Saint-Honor\u00e9 with a store aimed squarely at its Gen Z customers.\nLouis Vuitton Has a New SVP, Image and Communications\nCarole Bild\u00e9 moves over from the Champagne house Veuve Clicquot Ponsardin, which is also part of French luxury giant LVMH Mo\u00ebt Hennessy Louis Vuitton.\nFashion Design Students Show Off Their Final Runway Looks\nThe Savannah College of Art & Design, the R"
+    },
+    {
+      "source": "https://www.fibre2fashion.com/news/",
+      "headlines": [
+        "Latest News"
+      ],
+      "scraped_at": "2025-06-08T16:29:40.192617",
+      "content_preview": "Sponsored\nExplore the future of activewear at Functional Fabric Fair | Register Now\nSource quality yarns from top Asian & European suppliers at Yarn Expo | Register Now\nTexworld New York | Event for Textile & Fabric Sourcing | Register Now\nBusiness\nMarket Intelligence\nNews\nServices\nB2B Membership\nMedia\nPrime News\nMedia Booster\nMagazine Subscription\nEmerge - Fashion Accelerator\nMarket Intelligence\nTexPro\nCustom Market Research\nALCHEMPro\nAdvertisement\nDigital Advertisement\nPrint Advertisement\nWebi"
+    },
+    {
+      "source": "https://fashionunited.com/news",
+      "headlines": [],
+      "scraped_at": "2025-06-08T16:29:50.007525",
+      "content_preview": null
+    }
+  ],
+  "news": [
+    {
+      "title": "Texworld New York | Event for Textile & Fabric Sourcing | Register Now",
+      "description": "",
+      "url": "https://adsclick.fibre2fashion.com/app/clk/?q=07lrR3Iex48lWl+gszBH7x8K0JeON8MqdvA3kOGpXB3Err8hD/Aq2IUjtRS/VdQ88YMX0f2gs4TRXJjwdHsK2iXzYY8lK+FT3/35DncwL0Ta9CMX8Jnd6vQDKIGcsWXT8JxG/CtxzkqZrwjLqkBNvmX3Aa+Q9TAA1D7pQTGveskxd9MqKjV2jtUUG1cS5kiCzr+tCHATAndXortdzrn4EIriY4uShdfy+6C6/3tRwbqoCsod5LBkiNHYI5l9vVNPwhgmFphlM8ekzz+fWNjj8Dy0Yy7w3fR8Yes3vvRYte741WEL1X8z3LMNHmNJj1P3fA3C+1uKfynY7tWXs1WdgERlLcOun/Qrk5jMt6huKkKxeWlRc1viWRriaua7EW6oBFnLz7Z62S4TbQH5AdKovKDubGN+HpynMmccwEkcz1nbp8vY4RgCbdSwZqX8yjYz1ulQILVJlYz15w5Kh7ymJrchbKrnyIYsOosc5gK5Hl8f1kP/zcL9b7WzsckHHnpe",
+      "source": "www.fibre2fashion.com",
+      "published_at": "2025-06-08T16:29:57.271648",
+      "relevance_score": 0.7
+    },
+    {
+      "title": "Skip to main content",
+      "description": "",
+      "url": "https://wwd.com/#pagetop",
+      "source": "wwd.com",
+      "published_at": "2025-06-08T16:29:54.469890",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "WWD",
+      "description": "",
+      "url": "https://wwd.com/",
+      "source": "wwd.com",
+      "published_at": "2025-06-08T16:29:54.469925",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Footwear News",
+      "description": "",
+      "url": "https://wwd.com/footwear-news/",
+      "source": "wwd.com",
+      "published_at": "2025-06-08T16:29:54.469937",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Sourcing Journal",
+      "description": "",
+      "url": "https://sourcingjournal.com/",
+      "source": "wwd.com",
+      "published_at": "2025-06-08T16:29:54.469954",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "WWD Weekend",
+      "description": "",
+      "url": "https://wwd.com/tag/wwd-weekend/",
+      "source": "wwd.com",
+      "published_at": "2025-06-08T16:29:54.469975",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Beauty Inc",
+      "description": "",
+      "url": "https://wwd.com/beauty-industry-news/",
+      "source": "wwd.com",
+      "published_at": "2025-06-08T16:29:54.469985",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Fairchild Live",
+      "description": "",
+      "url": "https://events.fairchildlive.com/",
+      "source": "wwd.com",
+      "published_at": "2025-06-08T16:29:54.469999",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Got a Tip?",
+      "description": "",
+      "url": "https://wwd.com/news-tip/",
+      "source": "wwd.com",
+      "published_at": "2025-06-08T16:29:54.470016",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Today's Digital Daily",
+      "description": "",
+      "url": "https://wwd.com/wwd-publications/digital-daily/2025-06-06-1237900311/",
+      "source": "wwd.com",
+      "published_at": "2025-06-08T16:29:54.470043",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Explore the future of activewear at Functional Fabric Fair | Register Now",
+      "description": "",
+      "url": "https://adsclick.fibre2fashion.com/app/clk/?q=07lrR3Iex49OSCeye/+WWvpzc1HnGUcBTrc9EWNl6RFyvNn+yirGkmT2HS4JILbFi/sg10UJOxY2ldu2oxdiYfNZrRmeZb4gC3n663GHo8qJB2CdchYMkYDVGUQDAdHjc4gDxtU6lTg0qUzi1KfeSW27oB2+7IhjFtrURNe2F2QYBABfj3pYFNwSHZdo70iqTMyxk2Z0Ilbe32r12O9gfuzegrO2Suz7ZnvwOCFTF3i45I+LsOqHjcKu1Qgo5EoMCNk5DxkL5E2R/0/9+Cuup58/C2cjqgUbTJ3z74XAUjVq3La8VtBsKCKy57JEhX3RTEh0rbDDIWAX9u+R9XHQBIUUfF1bwe+iFYuLdHXNEa5CwR4CX1ukzZD0ga66Bf/m4iwLGzs2A/2LzbG3DhrRsYrQUBMicxBKkYXdLs571g+smOsiuKvx0h29TEVWvzG2CwLxIJsEUX3OU6jkqvjnOQSf0DSSpg0F",
+      "source": "www.fibre2fashion.com",
+      "published_at": "2025-06-08T16:29:57.271588",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Source quality yarns from top Asian & European suppliers at Yarn Expo | Register Now",
+      "description": "",
+      "url": "https://adsclick.fibre2fashion.com/app/clk/?q=07lrR3Iex48lWl+gszBH7x8K0JeON8MqYLYfdbKhhVEqd7V7CJNYe5eoe5K9RNAAty1mmolO+hkGuBT+yBL/g+WrhisvcJ26ul0E1MRBKsySCN5R0WpUNr51v63hl8oMiNGyoMPHV8QgxmpuB6luwET64nYn85RHHW+MsrecxjUbclTn2eS85QkDTvChend7bgGtZwmTTXjt3G7oizxRWvLCkCynsq5Z+lj9neS9sTeav4/pD/AZEOOtNKAdWn1SGHfnKf9VrY/+0QN4dP0pvw9HHGztPBde5xDBwF1ao+W58LIGjGnMSZWZZOO4zXtS1UcTXFih0N+ZpV9XAYFukqiQDDWQp/5M8q+Uo6YXpOKt852PRZBFmDvG/5rS385PMFp+glxzBDcdQ0Z2rcaD6WolKrTHD64B43c1ykV+/hPigSNPMothKHH0pTpoctMJnQrQYzkFh2UtvS1HatA42f3kbAV6CLgGlkAfV0nHqg8KwU2BDprEDFO0Em7pvhqu2JaMOch2JU8=",
+      "source": "www.fibre2fashion.com",
+      "published_at": "2025-06-08T16:29:57.271627",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Business",
+      "description": "",
+      "url": "https://www.fibre2fashion.com/garments",
+      "source": "www.fibre2fashion.com",
+      "published_at": "2025-06-08T16:29:57.271694",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "Market Intelligence",
+      "description": "",
+      "url": "https://www.fibre2fashion.com/market-intelligence",
+      "source": "www.fibre2fashion.com",
+      "published_at": "2025-06-08T16:29:57.271714",
+      "relevance_score": 0.0
+    },
+    {
+      "title": "News",
+      "description": "",
+      "url": "https://www.fibre2fashion.com/news/",
+      "source": "www.fibre2fashion.com",
+      "published_at": "2025-06-08T16:29:57.271732",
+      "relevance_score": 0.0
+    }
+  ],
+  "leads": [
+    {
+      "company_name": "The established interior design company first worked on the sizable Michigan resort in the late 1970s.",
+      "source": "https://wwd.com/",
+      "discovered_at": "2025-06-08T16:30:03.607960",
+      "lead_score": 10,
+      "industry_match": true
+    },
+    {
+      "company_name": "Nine, including Vietnam, Japan, China, in US currency monitoring list",
+      "source": "https://www.fibre2fashion.com/news/",
+      "discovered_at": "2025-06-08T16:30:06.066168",
+      "lead_score": 6,
+      "industry_match": true
+    },
+    {
+      "company_name": "T\u00fcyap Fairs and Exhibitions Organization Inc.",
+      "source": "https://www.fibre2fashion.com/news/",
+      "discovered_at": "2025-06-08T16:30:06.066188",
+      "lead_score": 10,
+      "industry_match": true
+    },
+    {
+      "company_name": "Nine, including Vietnam, Japan, China, in US currency monitoring list",
+      "source": "https://www.fibre2fashion.com/news/",
+      "discovered_at": "2025-06-08T16:30:06.066191",
+      "lead_score": 5,
+      "industry_match": true
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Leading Fashion Company",
+      "market_position": "Strong Player",
+      "estimated_size": "Small",
+      "focus_area": "fashion",
+      "competitive_score": 10,
+      "discovered_via": "Industry Analysis",
+      "last_updated": "2025-06-08T16:30:10.079360"
+    },
+    {
+      "name": "Leading Apparel Company",
+      "market_position": "Strong Player",
+      "estimated_size": "Small",
+      "focus_area": "apparel",
+      "competitive_score": 8,
+      "discovered_via": "Industry Analysis",
+      "last_updated": "2025-06-08T16:30:10.079384"
+    }
+  ]
+}
