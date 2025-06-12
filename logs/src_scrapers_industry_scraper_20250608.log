@@ -1,0 +1,16 @@
+2025-06-08 15:09:20,642 - src.scrapers.industry_scraper - WARNING - News API key not found or newsapi package not installed. News scraping will be limited.
+2025-06-08 15:09:20,644 - src.scrapers.industry_scraper - INFO - Starting data scraping for industry: consumer_goods
+2025-06-08 15:09:54,109 - src.scrapers.industry_scraper - INFO - Data saved to data/raw/consumer_goods_20250608_150954.json
+2025-06-08 15:09:54,110 - src.scrapers.industry_scraper - INFO - Data scraping completed for industry: consumer_goods
+2025-06-08 16:29:33,423 - src.scrapers.industry_scraper - WARNING - News API key not found or newsapi package not installed. News scraping will be limited.
+2025-06-08 16:29:33,423 - src.scrapers.industry_scraper - INFO - Starting data scraping for industry: fashion_apparel
+2025-06-08 16:30:10,081 - src.scrapers.industry_scraper - INFO - Data saved to data/raw/fashion_apparel_20250608_163010.json
+2025-06-08 16:30:10,081 - src.scrapers.industry_scraper - INFO - Data scraping completed for industry: fashion_apparel
+2025-06-08 17:00:52,606 - src.scrapers.industry_scraper - WARNING - News API key not found or newsapi package not installed. News scraping will be limited.
+2025-06-08 17:00:52,606 - src.scrapers.industry_scraper - INFO - Starting data scraping for industry: fashion_apparel
+2025-06-08 17:01:21,909 - src.scrapers.industry_scraper - INFO - Data saved to data/raw/fashion_apparel_20250608_170121.json
+2025-06-08 17:01:21,910 - src.scrapers.industry_scraper - INFO - Data scraping completed for industry: fashion_apparel
+2025-06-08 17:20:51,390 - src.scrapers.industry_scraper - WARNING - News API key not found or newsapi package not installed. News scraping will be limited.
+2025-06-08 17:20:51,390 - src.scrapers.industry_scraper - INFO - Starting data scraping for industry: fashion_apparel
+2025-06-08 17:21:20,211 - src.scrapers.industry_scraper - INFO - Data saved to data/raw/fashion_apparel_20250608_172120.json
+2025-06-08 17:21:20,211 - src.scrapers.industry_scraper - INFO - Data scraping completed for industry: fashion_apparel

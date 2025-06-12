@@ -1,0 +1,87 @@
+2025-06-09 16:27:56,918 - src.database.models - INFO - Database tables created successfully
+2025-06-09 16:30:23,127 - src.database.models - INFO - Database tables created successfully
+2025-06-09 16:31:21,730 - src.database.models - INFO - Database tables created successfully
+2025-06-09 16:37:29,607 - src.database.models - INFO - Database tables created successfully
+2025-06-09 16:41:25,187 - src.database.models - INFO - Database tables created successfully
+2025-06-09 16:42:52,663 - src.database.models - INFO - Database tables created successfully
+2025-06-09 16:48:28,086 - src.database.models - INFO - Database tables created successfully
+2025-06-09 16:49:15,203 - src.database.models - INFO - Database tables created successfully
+2025-06-09 19:44:17,557 - src.database.models - INFO - Database tables created successfully
+2025-06-09 19:47:21,429 - src.database.models - INFO - Database tables created successfully
+2025-06-09 19:47:55,550 - src.database.models - INFO - Database tables created successfully
+2025-06-09 19:50:17,988 - src.database.models - INFO - Database tables created successfully
+2025-06-09 19:54:30,421 - src.database.models - INFO - Database tables created successfully
+2025-06-09 19:58:49,073 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:01:06,242 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:02:48,276 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:04:42,599 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:05:17,281 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:09:32,801 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:12:26,482 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:15:20,732 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:15:44,242 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:16:36,246 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:18:22,639 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:23:35,447 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:29:44,764 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:32:44,397 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:34:52,144 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:36:13,811 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:37:45,083 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:38:04,839 - src.database.models - INFO - Database tables created successfully
+2025-06-09 20:39:13,999 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:00:17,531 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:01:47,960 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:03:13,269 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:06:18,922 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:06:34,221 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:07:48,089 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:13:10,488 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:17:55,714 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:18:58,997 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:20:52,915 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:22:37,314 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:31:53,408 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:38:10,618 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:44:05,801 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:46:46,215 - src.database.models - INFO - Database tables created successfully
+2025-06-09 21:58:10,402 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:00:47,149 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:03:47,723 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:08:57,360 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:09:21,393 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:10:54,978 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:10:55,110 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:10:56,117 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:11:07,295 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:11:12,800 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:11:19,165 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:11:19,347 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:14:01,187 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:14:01,338 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:14:03,055 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:14:26,396 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:14:49,107 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:14:49,339 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:17:58,090 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:17:58,226 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:18:00,749 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:18:21,712 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:18:50,471 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:18:57,111 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:19:05,916 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:19:06,106 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:21:47,892 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:21:48,051 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:21:48,221 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:22:14,740 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:25:28,223 - src.database.models - ERROR - Error creating database tables: (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s]
+[parameters: {'table_name': 'business_profiles', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-09 22:25:29,031 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:25:31,470 - src.database.models - INFO - Database tables created successfully
+2025-06-09 22:25:45,578 - src.database.models - INFO - Database tables created successfully

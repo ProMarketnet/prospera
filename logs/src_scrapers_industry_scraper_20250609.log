@@ -1,0 +1,8 @@
+2025-06-09 19:44:32,760 - src.scrapers.industry_scraper - WARNING - News API key not found or newsapi package not installed. News scraping will be limited.
+2025-06-09 19:44:32,761 - src.scrapers.industry_scraper - INFO - Starting data scraping for industry: agriculture
+2025-06-09 19:44:52,750 - src.scrapers.industry_scraper - INFO - Data saved to data/raw/agriculture_20250609_194452.json
+2025-06-09 19:44:52,750 - src.scrapers.industry_scraper - INFO - Data scraping completed for industry: agriculture
+2025-06-09 19:45:08,291 - src.scrapers.industry_scraper - WARNING - News API key not found or newsapi package not installed. News scraping will be limited.
+2025-06-09 19:45:08,292 - src.scrapers.industry_scraper - INFO - Starting data scraping for industry: agriculture
+2025-06-09 19:45:27,989 - src.scrapers.industry_scraper - INFO - Data saved to data/raw/agriculture_20250609_194527.json
+2025-06-09 19:45:27,989 - src.scrapers.industry_scraper - INFO - Data scraping completed for industry: agriculture
