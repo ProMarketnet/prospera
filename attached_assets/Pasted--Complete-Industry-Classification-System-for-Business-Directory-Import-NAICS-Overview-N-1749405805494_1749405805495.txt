@@ -1,0 +1,438 @@
+# Complete Industry Classification System for Business Directory Import
+
+## 📊 **NAICS Overview**
+
+NAICS (North American Industry Classification System) is the standard used by Federal statistical agencies, using a six-digit hierarchical coding system with 20 industry sectors. The manufacturing sector consists of establishments engaged in the mechanical, physical, or chemical transformation of materials into new products.
+
+---
+
+## 🏭 **The 20 Main NAICS Sectors**
+
+### **Goods-Producing Industries (5 sectors):**
+
+#### **Sector 11: Agriculture, Forestry, Fishing and Hunting**
+- Crop Production
+- Animal Production
+- Forestry and Logging
+- Fishing, Hunting and Trapping
+
+#### **Sector 21: Mining, Quarrying, and Oil and Gas Extraction**
+- Oil and Gas Extraction
+- Mining (except Oil and Gas)
+- Support Activities for Mining
+
+#### **Sector 22: Utilities**
+- Electric Power Generation
+- Natural Gas Distribution
+- Water and Sewer Systems
+- Steam and Air-Conditioning Supply
+
+#### **Sector 23: Construction**
+- Construction of Buildings
+- Heavy and Civil Engineering Construction
+- Specialty Trade Contractors
+
+#### **Sectors 31-33: Manufacturing** ⭐ **(Most Relevant for Your SME Focus)**
+*See detailed breakdown below*
+
+### **Service-Providing Industries (15 sectors):**
+
+#### **Sector 42: Wholesale Trade**
+- Merchant Wholesalers, Durable Goods
+- Merchant Wholesalers, Nondurable Goods
+- Electronic Markets and Agents
+
+#### **Sectors 44-45: Retail Trade**
+- Motor Vehicle and Parts Dealers
+- Electronics and Appliance Stores
+- Building Material and Garden Equipment
+- Food and Beverage Stores
+- Health and Personal Care Stores
+- Clothing and Accessories Stores
+- General Merchandise Stores
+- Miscellaneous Store Retailers
+
+#### **Sectors 48-49: Transportation and Warehousing**
+- Air Transportation
+- Water Transportation
+- Truck Transportation
+- Transit and Ground Passenger Transportation
+- Pipeline Transportation
+- Warehousing and Storage
+
+#### **Sector 51: Information**
+- Publishing Industries
+- Motion Picture and Sound Recording
+- Broadcasting
+- Telecommunications
+- Data Processing, Hosting, and Related Services
+
+#### **Sector 52: Finance and Insurance**
+- Credit Intermediation
+- Securities, Commodity Contracts
+- Insurance Carriers and Related Activities
+
+#### **Sector 53: Real Estate and Rental and Leasing**
+- Real Estate
+- Rental and Leasing Services
+
+#### **Sector 54: Professional, Scientific, and Technical Services**
+- Legal Services
+- Accounting and Bookkeeping
+- Architectural and Engineering Services
+- Computer Systems Design
+- Management and Technical Consulting
+- Scientific Research and Development
+
+#### **Sector 55: Management of Companies and Enterprises**
+- Management of Companies and Enterprises
+
+#### **Sector 56: Administrative and Support Services**
+- Administrative and Support Services
+- Waste Management and Remediation Services
+
+#### **Sector 61: Educational Services**
+- Educational Services
+
+#### **Sector 62: Health Care and Social Assistance**
+- Ambulatory Health Care Services
+- Hospitals
+- Nursing and Residential Care Facilities
+- Social Assistance
+
+#### **Sector 71: Arts, Entertainment, and Recreation**
+- Performing Arts and Spectator Sports
+- Museums and Historical Sites
+- Amusement, Gambling, and Recreation
+
+#### **Sector 72: Accommodation and Food Services**
+- Accommodation
+- Food Services and Drinking Places
+
+#### **Sector 81: Other Services (except Public Administration)**
+- Repair and Maintenance
+- Personal and Laundry Services
+- Religious Organizations
+- Grant-making and Social Advocacy Organizations
+
+#### **Sector 92: Public Administration**
+- Executive, Legislative, and General Government
+- Justice, Public Order, and Safety Activities
+- Administration of Economic Programs
+- Space Research and Technology
+- National Security and International Affairs
+
+---
+
+## 🏭 **Detailed Manufacturing Sector Breakdown (Most Relevant for SMEs)**
+
+The manufacturing sector consists of these subsectors:
+
+### **NAICS 311: Food Manufacturing**
+- Animal Food Manufacturing
+- Grain and Oilseed Milling
+- Sugar and Confectionery Product Manufacturing
+- Fruit and Vegetable Preserving and Specialty Food
+- Dairy Product Manufacturing
+- Animal Slaughtering and Processing
+- Seafood Product Preparation and Packaging
+- Bakeries and Tortilla Manufacturing
+- Other Food Manufacturing
+
+### **NAICS 312: Beverage and Tobacco Product Manufacturing**
+- Beverage Manufacturing
+- Tobacco Manufacturing
+
+### **NAICS 313: Textile Mills**
+- Fiber, Yarn, and Thread Mills
+- Fabric Mills
+- Textile and Fabric Finishing Mills
+
+### **NAICS 314: Textile Product Mills**
+- Textile Furnishings Mills
+- Other Textile Product Mills
+
+### **NAICS 315: Apparel Manufacturing** ⭐ **(High SME Focus)**
+- Apparel Knitting Mills
+- Cut and Sew Apparel Manufacturing
+- Apparel Accessories and Other Apparel Manufacturing
+
+### **NAICS 316: Leather and Allied Product Manufacturing** ⭐ **(Perfect for Italian Example)**
+- Leather and Hide Tanning and Finishing
+- Footwear Manufacturing
+- Other Leather and Allied Product Manufacturing
+
+### **NAICS 321: Wood Product Manufacturing**
+- Sawmills and Wood Preservation
+- Veneer, Plywood, and Engineered Wood Product
+- Other Wood Product Manufacturing
+
+### **NAICS 322: Paper Manufacturing**
+- Pulp, Paper, and Paperboard Mills
+- Converted Paper Product Manufacturing
+
+### **NAICS 323: Printing and Related Support Activities**
+- Printing and Related Support Activities
+
+### **NAICS 324: Petroleum and Coal Products Manufacturing**
+- Petroleum and Coal Products Manufacturing
+
+### **NAICS 325: Chemical Manufacturing**
+- Basic Chemical Manufacturing
+- Resin, Synthetic Rubber, and Artificial Fibers
+- Pesticide, Fertilizer, and Other Agricultural Chemical
+- Pharmaceutical and Medicine Manufacturing
+- Paint, Coating, and Adhesive Manufacturing
+- Soap, Cleaning Compound, and Toilet Preparation
+- Other Chemical Product and Preparation Manufacturing
+
+### **NAICS 326: Plastics and Rubber Products Manufacturing**
+- Plastics Product Manufacturing
+- Rubber Product Manufacturing
+
+### **NAICS 327: Nonmetallic Mineral Product Manufacturing**
+- Clay Product and Refractory Manufacturing
+- Glass and Glass Product Manufacturing
+- Cement and Concrete Product Manufacturing
+- Lime and Gypsum Product Manufacturing
+- Other Nonmetallic Mineral Product Manufacturing
+
+### **NAICS 331: Primary Metal Manufacturing**
+- Iron and Steel Mills and Ferroalloy Manufacturing
+- Steel Product Manufacturing from Purchased Steel
+- Alumina and Aluminum Production and Processing
+- Nonferrous Metal Production and Processing
+- Foundries
+
+### **NAICS 332: Fabricated Metal Product Manufacturing** ⭐ **(High SME Focus)**
+- Forging and Stamping
+- Cutlery and Handtool Manufacturing
+- Architectural and Structural Metals Manufacturing
+- Boiler, Tank, and Shipping Container Manufacturing
+- Hardware Manufacturing
+- Spring and Wire Product Manufacturing
+- Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing
+- Coating, Engraving, Heat Treating, and Allied Activities
+- Other Fabricated Metal Product Manufacturing
+
+### **NAICS 333: Machinery Manufacturing** ⭐ **(High SME Focus)**
+- Agriculture, Construction, and Mining Machinery Manufacturing
+- Industrial Machinery Manufacturing
+- Commercial and Service Industry Machinery Manufacturing
+- Ventilation, Heating, Air-Conditioning, and Commercial Refrigeration Equipment Manufacturing
+- Metalworking Machinery Manufacturing
+- Engine, Turbine, and Power Transmission Equipment Manufacturing
+- Other General Purpose Machinery Manufacturing
+
+### **NAICS 334: Computer and Electronic Product Manufacturing**
+- Computer and Peripheral Equipment Manufacturing
+- Communications Equipment Manufacturing
+- Audio and Video Equipment Manufacturing
+- Semiconductor and Other Electronic Component Manufacturing
+- Navigational, Measuring, Electromedical, and Control Instruments Manufacturing
+- Manufacturing and Reproducing Magnetic and Optical Media
+
+### **NAICS 335: Electrical Equipment, Appliance, and Component Manufacturing**
+- Electric Lighting Equipment Manufacturing
+- Household Appliance Manufacturing
+- Electrical Equipment Manufacturing
+- Other Electrical Equipment and Component Manufacturing
+
+### **NAICS 336: Transportation Equipment Manufacturing**
+- Motor Vehicle Manufacturing
+- Motor Vehicle Body and Trailer Manufacturing
+- Motor Vehicle Parts Manufacturing
+- Aerospace Product and Parts Manufacturing
+- Railroad Rolling Stock Manufacturing
+- Ship and Boat Building
+- Other Transportation Equipment Manufacturing
+
+### **NAICS 337: Furniture and Related Product Manufacturing** ⭐ **(High SME Focus)**
+- Household and Institutional Furniture and Kitchen Cabinet Manufacturing
+- Office Furniture (including Fixtures) Manufacturing
+- Other Furniture Related Product Manufacturing
+
+### **NAICS 339: Miscellaneous Manufacturing** ⭐ **(High SME Focus)**
+- Medical Equipment and Supplies Manufacturing
+- Other Miscellaneous Manufacturing
+
+---
+
+## 🎯 **Prospera SME Target Industries (Priority Order)**
+
+### **Tier 1: Primary SME Manufacturing Focus** ⭐⭐⭐
+1. **Fashion & Apparel (NAICS 315 + 316)**
+   - Cut and Sew Apparel Manufacturing
+   - Leather and Allied Products (shoes, bags, accessories)
+   - Textile Product Mills
+
+2. **Fabricated Metal Products (NAICS 332)**
+   - Custom metalworking and fabrication
+   - Architectural metals
+   - Hardware manufacturing
+
+3. **Furniture & Related Products (NAICS 337)**
+   - Custom furniture manufacturing
+   - Kitchen cabinet manufacturing
+   - Office furniture manufacturing
+
+4. **Miscellaneous Manufacturing (NAICS 339)**
+   - Medical equipment and supplies
+   - Sporting goods manufacturing
+   - Jewelry and silverware manufacturing
+
+### **Tier 2: Secondary SME Focus** ⭐⭐
+5. **Machinery Manufacturing (NAICS 333)**
+   - Specialized industrial machinery
+   - Commercial service industry machinery
+
+6. **Food Manufacturing (NAICS 311)**
+   - Specialty food manufacturing
+   - Artisan food products
+
+7. **Wood Product Manufacturing (NAICS 321)**
+   - Custom millwork and cabinetry
+   - Other wood product manufacturing
+
+8. **Plastics and Rubber Products (NAICS 326)**
+   - Custom plastics manufacturing
+   - Rubber product manufacturing
+
+### **Tier 3: Service Industries for SMEs** ⭐
+9. **Wholesale Trade (NAICS 42)**
+   - SMEs often involved in wholesale distribution
+
+10. **Professional Services (NAICS 54)**
+    - Design services
+    - Engineering services supporting manufacturing
+
+---
+
+## 🔧 **Implementation Strategy for API Import System**
+
+### **Industry Mapping for Directory APIs:**
+
+```python
+# Primary industry mappings for Google Places/Clearbit import
+INDUSTRY_MAPPING = {
+    # Fashion & Apparel
+    'apparel': 'Fashion & Apparel',
+    'clothing': 'Fashion & Apparel', 
+    'fashion': 'Fashion & Apparel',
+    'leather': 'Fashion & Apparel',
+    'footwear': 'Fashion & Apparel',
+    'shoes': 'Fashion & Apparel',
+    'textile': 'Fashion & Apparel',
+    
+    # Manufacturing
+    'manufacturing': 'Manufacturing',
+    'fabrication': 'Manufacturing',
+    'machinery': 'Manufacturing',
+    'metal': 'Manufacturing',
+    'furniture': 'Home & Lifestyle',
+    'wood': 'Home & Lifestyle',
+    
+    # Consumer Goods
+    'consumer goods': 'Consumer Goods',
+    'electronics': 'Consumer Electronics',
+    'appliance': 'Consumer Electronics',
+    'food': 'Food & Beverage',
+    'beverage': 'Food & Beverage'
+}
+```
+
+### **Industry Standardization for Profile System:**
+
+```python
+# Standardized industry categories for Prospera profiles
+PROSPERA_INDUSTRIES = [
+    'Fashion & Apparel',
+    'Manufacturing', 
+    'Consumer Goods',
+    'Consumer Electronics',
+    'Home & Lifestyle',
+    'Food & Beverage',
+    'Automotive',
+    'Industrial Equipment',
+    'Medical Devices',
+    'Specialty Manufacturing',
+    'Other'
+]
+```
+
+### **Geographic Industry Variations:**
+
+**Italy Focus:**
+- Leather goods and footwear (strong)
+- Fashion and textiles (strong)
+- Machinery manufacturing (strong)
+- Food manufacturing (strong)
+
+**Germany Focus:**
+- Machinery and industrial equipment (strong)
+- Automotive manufacturing (strong)
+- Chemical manufacturing (strong)
+
+**Korea Focus:**
+- Electronics manufacturing (strong)
+- Automotive parts (strong)
+- Textile manufacturing (strong)
+
+**United States Focus:**
+- Technology and electronics (strong)
+- Food and beverage (strong)
+- Consumer goods (strong)
+
+---
+
+## 💡 **Industry Classification Best Practices**
+
+### **For Directory Import System:**
+
+1. **Multi-Level Matching:**
+   - Match broad categories first (Manufacturing)
+   - Refine to specific subsectors (Leather Products)
+   - Allow for multiple industry classifications
+
+2. **Confidence Scoring:**
+   - High confidence: Exact NAICS match
+   - Medium confidence: Keyword-based mapping
+   - Low confidence: Generic business type
+
+3. **Industry Validation:**
+   - Cross-reference multiple sources
+   - Use business description to validate
+   - Allow user override/correction
+
+4. **SME-Specific Categories:**
+   - Focus on manufacturing subsectors
+   - Prioritize B2B industries
+   - Include emerging/niche industries
+
+### **For Customer Intelligence:**
+
+1. **Industry-Specific Data Sources:**
+   - Fashion: Fashion Network, WWD, Drapers
+   - Manufacturing: ThomasNet, Alibaba, Made-in-China
+   - Electronics: Electronics Weekly, EDN
+
+2. **Market Analysis by Industry:**
+   - Different trends for different industries
+   - Industry-specific trade shows and events
+   - Regulatory changes by industry
+
+3. **Competitor Analysis:**
+   - Industry-specific competitor databases
+   - Trade association member directories
+   - Industry publication advertising analysis
+
+---
+
+## 🎯 **Quick Reference for Implementation**
+
+**Total Industries:** ~1,200 6-digit NAICS codes  
+**SME Manufacturing Focus:** ~200 relevant codes  
+**Prospera Primary Target:** ~50 key industries  
+**Implementation Priority:** Start with 10-15 most common SME industries
+
+**This classification system ensures your directory import can accurately categorize and serve any SME manufacturer globally while maintaining the flexibility to add specialized industries as you scale.**

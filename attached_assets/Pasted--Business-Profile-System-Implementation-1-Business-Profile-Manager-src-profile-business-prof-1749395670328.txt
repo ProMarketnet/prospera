@@ -1,0 +1,867 @@
+# Business Profile System Implementation
+
+## 1. Business Profile Manager (`src/profile/business_profile.py`)
+
+```python
+import json
+import os
+from datetime import datetime
+from typing import Dict, List, Any, Optional
+from dataclasses import dataclass, asdict
+from enum import Enum
+
+class BusinessSize(Enum):
+    MICRO = "1-10 employees"
+    SMALL = "11-50 employees" 
+    MEDIUM = "51-250 employees"
+    LARGE = "250+ employees"
+
+class MarketFocus(Enum):
+    LOCAL = "Local/Regional"
+    NATIONAL = "National"
+    INTERNATIONAL = "International"
+    GLOBAL = "Global"
+
+@dataclass
+class BusinessProfile:
+    # Company Details
+    company_name: str
+    industry: str
+    sub_industry: str
+    business_size: BusinessSize
+    annual_revenue: str
+    location: str
+    
+    # Products & Services
+    primary_products: List[str]
+    target_markets: List[str]
+    market_focus: MarketFocus
+    unique_selling_points: List[str]
+    
+    # Current Challenges & Goals
+    main_challenges: List[str]
+    growth_goals: List[str]
+    target_revenue_growth: str
+    
+    # Market Intelligence Preferences
+    focus_regions: List[str]
+    competitor_companies: List[str]
+    key_keywords: List[str]
+    preferred_languages: List[str]
+    
+    # Profile Metadata
+    created_at: str
+    updated_at: str
+    profile_completeness: float
+
+class BusinessProfileManager:
+    """Manages business profiles and customizes AI analysis accordingly"""
+    
+    def __init__(self):
+        self.profiles_dir = "data/profiles"
+        os.makedirs(self.profiles_dir, exist_ok=True)
+    
+    def create_profile_from_wizard(self, responses: Dict[str, Any]) -> BusinessProfile:
+        """Create business profile from onboarding wizard responses"""
+        
+        # Extract and process wizard responses
+        profile = BusinessProfile(
+            company_name=responses.get("company_name", ""),
+            industry=responses.get("industry", ""),
+            sub_industry=responses.get("sub_industry", ""),
+            business_size=BusinessSize(responses.get("business_size", BusinessSize.SMALL.value)),
+            annual_revenue=responses.get("annual_revenue", ""),
+            location=responses.get("location", ""),
+            
+            primary_products=self._parse_list_input(responses.get("primary_products", "")),
+            target_markets=self._parse_list_input(responses.get("target_markets", "")),
+            market_focus=MarketFocus(responses.get("market_focus", MarketFocus.LOCAL.value)),
+            unique_selling_points=self._parse_list_input(responses.get("unique_selling_points", "")),
+            
+            main_challenges=self._parse_list_input(responses.get("main_challenges", "")),
+            growth_goals=self._parse_list_input(responses.get("growth_goals", "")),
+            target_revenue_growth=responses.get("target_revenue_growth", ""),
+            
+            focus_regions=self._parse_list_input(responses.get("focus_regions", "")),
+            competitor_companies=self._parse_list_input(responses.get("competitor_companies", "")),
+            key_keywords=self._generate_keywords(responses),
+            preferred_languages=["English"],  # Default
+            
+            created_at=datetime.now().isoformat(),
+            updated_at=datetime.now().isoformat(),
+            profile_completeness=self._calculate_completeness(responses)
+        )
+        
+        return profile
+    
+    def get_italian_shoe_manufacturer_template(self) -> Dict[str, Any]:
+        """Template for Italian shoe manufacturer - demo purposes"""
+        return {
+            "company_name": "Artisan Leather Works",
+            "industry": "Fashion & Apparel",
+            "sub_industry": "Leather Goods & Footwear",
+            "business_size": BusinessSize.SMALL.value,
+            "annual_revenue": "$1-5M annually",
+            "location": "Milan, Italy",
+            
+            "primary_products": "Premium leather shoes, Custom footwear, Artisan boots",
+            "target_markets": "Luxury retail, Boutique stores, International buyers",
+            "market_focus": MarketFocus.INTERNATIONAL.value,
+            "unique_selling_points": "Traditional craftsmanship, Premium Italian leather, Custom sizing",
+            
+            "main_challenges": "Finding new international customers, Seasonal demand fluctuations, Material cost increases",
+            "growth_goals": "Expand to Asian markets, Increase online sales, Develop sustainable product line",
+            "target_revenue_growth": "25-30% annually",
+            
+            "focus_regions": "Europe, Asia, North America",
+            "competitor_companies": "Santoni, Church's, Berluti",
+            "preferred_languages": ["English", "Italian"]
+        }
+    
+    def customize_data_collection(self, profile: BusinessProfile) -> Dict[str, Any]:
+        """Customize data collection strategy based on business profile"""
+        
+        # Generate custom search keywords
+        keywords = self._generate_comprehensive_keywords(profile)
+        
+        # Determine relevant data sources
+        data_sources = self._select_data_sources(profile)
+        
+        # Define search parameters
+        search_config = {
+            "keywords": keywords,
+            "data_sources": data_sources,
+            "geographic_focus": profile.focus_regions,
+            "competitor_tracking": profile.competitor_companies,
+            "market_segments": profile.target_markets,
+            "product_categories": profile.primary_products,
+            "languages": profile.preferred_languages
+        }
+        
+        return search_config
+    
+    def customize_ai_analysis(self, profile: BusinessProfile) -> Dict[str, str]:
+        """Generate custom AI prompts based on business profile"""
+        
+        company_context = f"""
+        Company Profile:
+        - Name: {profile.company_name}
+        - Industry: {profile.industry} - {profile.sub_industry}
+        - Size: {profile.business_size.value}
+        - Location: {profile.location}
+        - Revenue: {profile.annual_revenue}
+        
+        Products: {', '.join(profile.primary_products)}
+        Target Markets: {', '.join(profile.target_markets)}
+        Market Focus: {profile.market_focus.value}
+        
+        Current Challenges: {', '.join(profile.main_challenges)}
+        Growth Goals: {', '.join(profile.growth_goals)}
+        Target Growth: {profile.target_revenue_growth}
+        """
+        
+        custom_prompts = {
+            "trend_analysis": f"""
+            Analyze market trends specifically for this business profile:
+            {company_context}
+            
+            Focus on trends that directly impact their products, target markets, and growth goals.
+            Consider their geographic focus and current challenges.
+            Provide actionable insights for their specific situation.
+            """,
+            
+            "opportunity_identification": f"""
+            Identify business opportunities specifically relevant to:
+            {company_context}
+            
+            Consider:
+            - Their unique selling points and competitive advantages
+            - Target markets they want to expand into
+            - Product categories that align with their expertise
+            - Geographic regions they're targeting
+            - Revenue growth goals
+            """,
+            
+            "lead_qualification": f"""
+            Evaluate and score leads based on fit for this specific business:
+            {company_context}
+            
+            Prioritize leads that:
+            - Match their target market profile
+            - Are in their focus geographic regions
+            - Would value their unique selling points
+            - Align with their growth goals and capacity
+            """,
+            
+            "competitive_analysis": f"""
+            Analyze competition specifically for:
+            {company_context}
+            
+            Compare against their known competitors: {', '.join(profile.competitor_companies)}
+            Focus on competitive positioning in their target markets.
+            Identify competitive advantages and threats specific to their situation.
+            """
+        }
+        
+        return custom_prompts
+    
+    def generate_custom_report_sections(self, profile: BusinessProfile) -> List[Dict[str, str]]:
+        """Generate custom report sections based on business profile"""
+        
+        sections = [
+            {
+                "title": f"Executive Summary for {profile.company_name}",
+                "focus": "Tailored insights for your specific business situation"
+            },
+            {
+                "title": "Market Opportunities in Your Focus Regions",
+                "focus": f"Specific opportunities in: {', '.join(profile.focus_regions)}"
+            },
+            {
+                "title": "Qualified Leads for Your Products",
+                "focus": f"Prospects specifically seeking: {', '.join(profile.primary_products)}"
+            },
+            {
+                "title": "Competitive Intelligence",
+                "focus": f"Analysis of {', '.join(profile.competitor_companies)} and market positioning"
+            },
+            {
+                "title": "Growth Strategy Recommendations",
+                "focus": f"Specific actions to achieve {profile.target_revenue_growth} growth"
+            }
+        ]
+        
+        # Add custom sections based on specific challenges
+        if "international expansion" in ' '.join(profile.growth_goals).lower():
+            sections.append({
+                "title": "International Expansion Strategy",
+                "focus": "Market entry recommendations for your target regions"
+            })
+        
+        if "sustainable" in ' '.join(profile.growth_goals).lower():
+            sections.append({
+                "title": "Sustainability Opportunities",
+                "focus": "Sustainable product development and market trends"
+            })
+        
+        return sections
+    
+    def _generate_comprehensive_keywords(self, profile: BusinessProfile) -> List[str]:
+        """Generate comprehensive keyword list based on profile"""
+        keywords = []
+        
+        # Product-based keywords
+        for product in profile.primary_products:
+            keywords.extend([
+                product.strip(),
+                f"{product.strip()} manufacturer",
+                f"{product.strip()} supplier",
+                f"custom {product.strip()}",
+                f"premium {product.strip()}"
+            ])
+        
+        # Location-based keywords
+        location_parts = profile.location.split(", ")
+        for part in location_parts:
+            keywords.extend([
+                f"{part.strip()} {profile.sub_industry}",
+                f"{part.strip()} manufacturing"
+            ])
+        
+        # Market-based keywords
+        for market in profile.target_markets:
+            keywords.extend([
+                market.strip(),
+                f"{market.strip()} trends",
+                f"{market.strip()} demand"
+            ])
+        
+        # Challenge-based keywords
+        for challenge in profile.main_challenges:
+            if "international" in challenge.lower():
+                keywords.extend(["export opportunities", "international trade", "global markets"])
+            if "seasonal" in challenge.lower():
+                keywords.extend(["seasonal demand", "inventory management", "demand forecasting"])
+        
+        # Goal-based keywords
+        for goal in profile.growth_goals:
+            if "asian" in goal.lower() or "asia" in goal.lower():
+                keywords.extend(["asian market", "korea", "japan", "china", "singapore"])
+            if "online" in goal.lower():
+                keywords.extend(["e-commerce", "online retail", "digital sales"])
+            if "sustainable" in goal.lower():
+                keywords.extend(["sustainable fashion", "eco-friendly", "green manufacturing"])
+        
+        return list(set(keywords))  # Remove duplicates
+    
+    def _select_data_sources(self, profile: BusinessProfile) -> Dict[str, List[str]]:
+        """Select relevant data sources based on profile"""
+        sources = {
+            "trade_publications": [],
+            "social_media": ["LinkedIn", "Instagram"],
+            "business_directories": ["Google Places", "Industry directories"],
+            "news_sources": ["Industry news", "Local business news"],
+            "market_research": ["Trade associations", "Industry reports"]
+        }
+        
+        # Industry-specific sources
+        if "fashion" in profile.industry.lower():
+            sources["trade_publications"].extend([
+                "WWD", "Fashion Business", "Drapers", "Fashion Network"
+            ])
+            sources["social_media"].extend(["Pinterest", "Fashion blogs"])
+        
+        # Geographic-specific sources
+        if any("asia" in region.lower() for region in profile.focus_regions):
+            sources["trade_publications"].extend([
+                "Asia Textile", "Asian Footwear", "Korea Fashion"
+            ])
+        
+        if "europe" in ' '.join(profile.focus_regions).lower():
+            sources["trade_publications"].extend([
+                "European Footwear", "Fashion Europe", "Italian Fashion"
+            ])
+        
+        return sources
+    
+    def _parse_list_input(self, input_str: str) -> List[str]:
+        """Parse comma-separated string into list"""
+        if not input_str:
+            return []
+        return [item.strip() for item in input_str.split(",") if item.strip()]
+    
+    def _generate_keywords(self, responses: Dict[str, Any]) -> List[str]:
+        """Generate keywords from profile responses"""
+        keywords = []
+        
+        # Add products as keywords
+        products = self._parse_list_input(responses.get("primary_products", ""))
+        keywords.extend(products)
+        
+        # Add industry keywords
+        industry = responses.get("industry", "")
+        sub_industry = responses.get("sub_industry", "")
+        keywords.extend([industry, sub_industry])
+        
+        # Add market keywords
+        markets = self._parse_list_input(responses.get("target_markets", ""))
+        keywords.extend(markets)
+        
+        return [k for k in keywords if k]  # Remove empty strings
+    
+    def _calculate_completeness(self, responses: Dict[str, Any]) -> float:
+        """Calculate profile completeness percentage"""
+        required_fields = [
+            "company_name", "industry", "primary_products", 
+            "target_markets", "main_challenges", "growth_goals"
+        ]
+        
+        completed = sum(1 for field in required_fields if responses.get(field))
+        return (completed / len(required_fields)) * 100
+    
+    def save_profile(self, profile: BusinessProfile, profile_id: str) -> str:
+        """Save business profile to file"""
+        filepath = f"{self.profiles_dir}/{profile_id}.json"
+        
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(asdict(profile), f, indent=2, ensure_ascii=False)
+        
+        return filepath
+    
+    def load_profile(self, profile_id: str) -> Optional[BusinessProfile]:
+        """Load business profile from file"""
+        filepath = f"{self.profiles_dir}/{profile_id}.json"
+        
+        if not os.path.exists(filepath):
+            return None
+        
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Convert back to BusinessProfile
+        return BusinessProfile(**data)
+
+
+## 2. Profile-Aware Data Scraper (`src/scrapers/profile_scraper.py`)
+
+```python
+import requests
+from bs4 import BeautifulSoup
+import json
+from datetime import datetime
+from typing import Dict, List, Any
+import time
+
+from ..profile.business_profile import BusinessProfile, BusinessProfileManager
+from ..utils.logger import setup_logger
+
+logger = setup_logger(__name__)
+
+class ProfileAwareDataScraper:
+    """Data scraper that customizes collection based on business profile"""
+    
+    def __init__(self, profile: BusinessProfile):
+        self.profile = profile
+        self.profile_manager = BusinessProfileManager()
+        
+        # Get customized search configuration
+        self.search_config = self.profile_manager.customize_data_collection(profile)
+        
+        # Setup session
+        self.session = requests.Session()
+        self.session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (compatible; BusinessIntelligenceBot/1.0)'
+        })
+    
+    def scrape_profile_specific_data(self) -> Dict[str, Any]:
+        """Scrape data customized for the specific business profile"""
+        logger.info(f"Scraping data for {self.profile.company_name}")
+        
+        scraped_data = {
+            "profile": {
+                "company_name": self.profile.company_name,
+                "industry": self.profile.industry,
+                "focus_regions": self.profile.focus_regions,
+                "target_markets": self.profile.target_markets
+            },
+            "timestamp": datetime.now().isoformat(),
+            "trends": self._scrape_targeted_trends(),
+            "opportunities": self._discover_targeted_opportunities(),
+            "leads": self._find_qualified_leads(),
+            "competitor_intelligence": self._monitor_competitors(),
+            "market_signals": self._detect_market_signals()
+        }
+        
+        return scraped_data
+    
+    def _scrape_targeted_trends(self) -> List[Dict]:
+        """Scrape trends specifically relevant to the business profile"""
+        trends = []
+        
+        # Use profile-specific keywords
+        keywords = self.search_config["keywords"]
+        geographic_focus = self.search_config["geographic_focus"]
+        
+        for keyword in keywords[:10]:  # Limit to prevent rate limiting
+            try:
+                # Search for trends specific to this keyword + geographic focus
+                for region in geographic_focus[:3]:  # Top 3 regions
+                    search_query = f"{keyword} {region} trends 2025"
+                    
+                    # Simulate trend search (in real implementation, use Google Trends API)
+                    trend_data = {
+                        "keyword": keyword,
+                        "region": region,
+                        "trend_strength": self._calculate_trend_strength(keyword, region),
+                        "relevance_to_profile": self._calculate_profile_relevance(keyword),
+                        "search_volume": f"High interest in {region}",
+                        "related_queries": [
+                            f"best {keyword} {region}",
+                            f"{keyword} suppliers {region}",
+                            f"custom {keyword} {region}"
+                        ]
+                    }
+                    trends.append(trend_data)
+                
+                time.sleep(1)  # Rate limiting
+                
+            except Exception as e:
+                logger.error(f"Error scraping trends for {keyword}: {str(e)}")
+                continue
+        
+        # Sort by relevance to profile
+        trends.sort(key=lambda x: x["relevance_to_profile"], reverse=True)
+        return trends[:15]  # Return top 15 most relevant
+    
+    def _discover_targeted_opportunities(self) -> List[Dict]:
+        """Discover opportunities specifically matching the business profile"""
+        opportunities = []
+        
+        # Search for opportunities in target markets
+        for market in self.profile.target_markets:
+            for region in self.profile.focus_regions:
+                
+                # Generate opportunity based on profile
+                if "luxury" in market.lower() and any("europe" in r.lower() for r in [region]):
+                    opportunities.append({
+                        "type": "Market Expansion",
+                        "description": f"Growing demand for {', '.join(self.profile.primary_products)} in {region} luxury market",
+                        "market": market,
+                        "region": region,
+                        "estimated_value": "$200K-500K annually",
+                        "confidence": "High",
+                        "timeline": "3-6 months",
+                        "requirements": ["Local partnerships", "Market research", "Product adaptation"],
+                        "profile_match": 95
+                    })
+                
+                elif "boutique" in market.lower() and any("asia" in r.lower() for r in [region]):
+                    opportunities.append({
+                        "type": "New Customer Segment",
+                        "description": f"Boutique stores in {region} seeking artisan {', '.join(self.profile.primary_products)}",
+                        "market": market,
+                        "region": region,
+                        "estimated_value": "$150K-300K annually",
+                        "confidence": "Medium-High",
+                        "timeline": "6-12 months",
+                        "requirements": ["Cultural adaptation", "Local distributor", "Product certification"],
+                        "profile_match": 87
+                    })
+        
+        # Sort by profile match score
+        opportunities.sort(key=lambda x: x["profile_match"], reverse=True)
+        return opportunities[:10]
+    
+    def _find_qualified_leads(self) -> List[Dict]:
+        """Find leads that match the business profile criteria"""
+        leads = []
+        
+        # Generate qualified leads based on profile
+        for target_market in self.profile.target_markets:
+            for region in self.profile.focus_regions:
+                
+                # Create realistic leads based on profile
+                sample_leads = self._generate_profile_matched_leads(target_market, region)
+                leads.extend(sample_leads)
+        
+        # Score leads based on profile fit
+        for lead in leads:
+            lead["profile_fit_score"] = self._calculate_lead_fit_score(lead)
+        
+        # Sort by profile fit
+        leads.sort(key=lambda x: x["profile_fit_score"], reverse=True)
+        return leads[:15]  # Top 15 best-fit leads
+    
+    def _monitor_competitors(self) -> List[Dict]:
+        """Monitor competitor activities specific to profile interests"""
+        competitor_intel = []
+        
+        for competitor in self.profile.competitor_companies:
+            try:
+                # Simulate competitor monitoring
+                intel = {
+                    "competitor": competitor,
+                    "recent_activities": self._get_competitor_activities(competitor),
+                    "market_positioning": self._analyze_competitor_positioning(competitor),
+                    "threat_level": self._assess_threat_level(competitor),
+                    "opportunities_vs_competitor": self._find_competitive_opportunities(competitor)
+                }
+                competitor_intel.append(intel)
+                
+            except Exception as e:
+                logger.error(f"Error monitoring {competitor}: {str(e)}")
+                continue
+        
+        return competitor_intel
+    
+    def _detect_market_signals(self) -> List[Dict]:
+        """Detect market signals relevant to the business profile"""
+        signals = []
+        
+        # Check for signals related to growth goals
+        for goal in self.profile.growth_goals:
+            if "asian" in goal.lower():
+                signals.append({
+                    "signal_type": "Market Expansion",
+                    "description": "Increased luxury goods imports in South Korea (+23% YoY)",
+                    "relevance": "High - aligns with Asian market expansion goal",
+                    "action_required": "Research Korean market entry requirements",
+                    "urgency": "Medium",
+                    "source": "Trade statistics"
+                })
+            
+            elif "sustainable" in goal.lower():
+                signals.append({
+                    "signal_type": "Product Development",
+                    "description": "EU sustainable fashion regulations taking effect Q3 2025",
+                    "relevance": "High - impacts sustainable product line development",
+                    "action_required": "Review product compliance requirements",
+                    "urgency": "High",
+                    "source": "Regulatory news"
+                })
+            
+            elif "online" in goal.lower():
+                signals.append({
+                    "signal_type": "Sales Channel",
+                    "description": "B2B e-commerce platforms showing 35% growth in fashion category",
+                    "relevance": "Medium - supports online sales growth goal",
+                    "action_required": "Evaluate B2B platform partnerships",
+                    "urgency": "Low",
+                    "source": "Industry reports"
+                })
+        
+        return signals
+    
+    def _calculate_trend_strength(self, keyword: str, region: str) -> int:
+        """Calculate trend strength (mock implementation)"""
+        # In real implementation, this would use actual trend data
+        base_score = hash(keyword + region) % 40 + 60  # Score between 60-100
+        return base_score
+    
+    def _calculate_profile_relevance(self, keyword: str) -> float:
+        """Calculate how relevant a keyword is to the business profile"""
+        relevance_score = 0.0
+        
+        # Check against profile elements
+        if keyword.lower() in [p.lower() for p in self.profile.primary_products]:
+            relevance_score += 0.4
+        
+        if keyword.lower() in [m.lower() for m in self.profile.target_markets]:
+            relevance_score += 0.3
+        
+        if keyword.lower() in self.profile.industry.lower():
+            relevance_score += 0.2
+        
+        if keyword.lower() in self.profile.location.lower():
+            relevance_score += 0.1
+        
+        return min(relevance_score, 1.0)  # Cap at 1.0
+    
+    def _generate_profile_matched_leads(self, target_market: str, region: str) -> List[Dict]:
+        """Generate realistic leads that match profile criteria"""
+        
+        # Define lead templates based on target market and region
+        lead_templates = {
+            ("luxury retail", "europe"): [
+                {
+                    "company_name": "Boutique Milano Luxury",
+                    "location": "Milan, Italy",
+                    "type": "Luxury Boutique",
+                    "description": "High-end boutique seeking exclusive Italian footwear brands"
+                },
+                {
+                    "company_name": "Paris Premium Fashion",
+                    "location": "Paris, France", 
+                    "type": "Luxury Retailer",
+                    "description": "Luxury retailer expanding artisan footwear collection"
+                }
+            ],
+            ("boutique stores", "asia"): [
+                {
+                    "company_name": "Seoul Style House",
+                    "location": "Seoul, South Korea",
+                    "type": "Fashion Boutique",
+                    "description": "Boutique chain importing European fashion brands"
+                },
+                {
+                    "company_name": "Tokyo Artisan Collective",
+                    "location": "Tokyo, Japan",
+                    "type": "Artisan Retailer", 
+                    "description": "Retailer specializing in handcrafted goods"
+                }
+            ]
+        }
+        
+        # Get matching templates
+        key = (target_market.lower(), region.lower().split()[0] if region else "")
+        templates = lead_templates.get(key, [])
+        
+        leads = []
+        for template in templates:
+            lead = {
+                **template,
+                "target_market_match": target_market,
+                "region_match": region,
+                "estimated_annual_volume": "$50K-200K",
+                "decision_maker": "Purchasing Manager",
+                "contact_method": "Email + LinkedIn",
+                "next_action": "Send product catalog and schedule video call",
+                "discovery_date": datetime.now().isoformat()
+            }
+            leads.append(lead)
+        
+        return leads
+    
+    def _calculate_lead_fit_score(self, lead: Dict) -> int:
+        """Calculate how well a lead fits the business profile"""
+        score = 70  # Base score
+        
+        # Boost score for target market match
+        if lead.get("target_market_match", "").lower() in [m.lower() for m in self.profile.target_markets]:
+            score += 15
+        
+        # Boost score for geographic focus match
+        lead_location = lead.get("location", "")
+        for region in self.profile.focus_regions:
+            if region.lower() in lead_location.lower():
+                score += 10
+                break
+        
+        # Boost score for product relevance
+        lead_description = lead.get("description", "").lower()
+        for product in self.profile.primary_products:
+            if any(word in lead_description for word in product.lower().split()):
+                score += 5
+                break
+        
+        return min(score, 100)  # Cap at 100
+    
+    def _get_competitor_activities(self, competitor: str) -> List[str]:
+        """Get recent competitor activities (mock implementation)"""
+        activities = [
+            f"{competitor} launched new spring collection",
+            f"{competitor} expanded to 3 new markets in Asia", 
+            f"{competitor} partnered with sustainable materials supplier",
+            f"{competitor} increased prices by 8% across product line"
+        ]
+        return activities[:2]  # Return 2 activities
+    
+    def _analyze_competitor_positioning(self, competitor: str) -> Dict[str, str]:
+        """Analyze competitor market positioning"""
+        return {
+            "price_position": "Premium",
+            "target_demographic": "Luxury consumers",
+            "key_differentiator": "Brand heritage and craftsmanship",
+            "distribution_strategy": "Selective distribution through high-end retailers"
+        }
+    
+    def _assess_threat_level(self, competitor: str) -> str:
+        """Assess competitive threat level"""
+        return "Medium"  # Simplified for demo
+    
+    def _find_competitive_opportunities(self, competitor: str) -> List[str]:
+        """Find opportunities to compete against specific competitor"""
+        return [
+            "Underserved mid-market segment",
+            "Limited presence in Asian markets",
+            "Lack of sustainable product options"
+        ]
+
+
+## 3. Profile-Aware AI Analyzer (`src/analysis/profile_analyzer.py`)
+
+```python
+import openai
+from typing import Dict, List, Any
+import json
+from datetime import datetime
+
+from ..profile.business_profile import BusinessProfile, BusinessProfileManager
+from ..utils.config import config
+from ..utils.logger import setup_logger
+
+logger = setup_logger(__name__)
+
+class ProfileAwareAnalyzer:
+    """AI analyzer that customizes analysis based on business profile"""
+    
+    def __init__(self, profile: BusinessProfile):
+        self.profile = profile
+        self.profile_manager = BusinessProfileManager()
+        self.client = openai.OpenAI(api_key=config.OPENAI_API_KEY)
+        
+        # Get custom prompts for this profile
+        self.custom_prompts = self.profile_manager.customize_ai_analysis(profile)
+    
+    def analyze_with_profile_context(self, scraped_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze data with full business profile context"""
+        logger.info(f"Analyzing data for {self.profile.company_name}")
+        
+        analysis = {
+            "profile_summary": self._generate_profile_summary(),
+            "targeted_opportunities": self._analyze_targeted_opportunities(scraped_data),
+            "qualified_leads": self._analyze_qualified_leads(scraped_data),
+            "competitive_positioning": self._analyze_competitive_position(scraped_data),
+            "growth_strategy": self._develop_growth_strategy(scraped_data),
+            "risk_assessment": self._assess_risks(scraped_data),
+            "action_plan": self._create_action_plan(scraped_data),
+            "roi_projections": self._project_roi(scraped_data)
+        }
+        
+        return analysis
+    
+    def _generate_profile_summary(self) -> Dict[str, Any]:
+        """Generate intelligent summary of business profile"""
+        
+        prompt = f"""
+        Analyze this business profile and provide strategic insights:
+        
+        Company: {self.profile.company_name}
+        Industry: {self.profile.industry} - {self.profile.sub_industry}
+        Size: {self.profile.business_size.value}
+        Location: {self.profile.location}
+        Revenue: {self.profile.annual_revenue}
+        
+        Products: {', '.join(self.profile.primary_products)}
+        Target Markets: {', '.join(self.profile.target_markets)}
+        Market Focus: {self.profile.market_focus.value}
+        USPs: {', '.join(self.profile.unique_selling_points)}
+        
+        Challenges: {', '.join(self.profile.main_challenges)}
+        Goals: {', '.join(self.profile.growth_goals)}
+        Target Growth: {self.profile.target_revenue_growth}
+        
+        Provide:
+        1. Business strength assessment
+        2. Market position analysis  
+        3. Growth readiness evaluation
+        4. Key success factors
+        5. Strategic recommendations summary
+        
+        Format as JSON.
+        """
+        
+        response = self.client.chat.completions.create(
+            model=config.OPENAI_MODEL,
+            messages=[
+                {"role": "system", "content": "You are a senior business strategy consultant."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=1500,
+            temperature=0.7
+        )
+        
+        try:
+            return json.loads(response.choices[0].message.content)
+        except json.JSONDecodeError:
+            return {"analysis": response.choices[0].message.content}
+    
+    def _analyze_targeted_opportunities(self, scraped_data: Dict[str, Any]) -> List[Dict]:
+        """Analyze opportunities specifically for this business profile"""
+        
+        opportunities_data = scraped_data.get("opportunities", [])
+        
+        prompt = f"""
+        {self.custom_prompts["opportunity_identification"]}
+        
+        Available Market Data:
+        {json.dumps(opportunities_data, indent=2)}
+        
+        For each opportunity, provide:
+        - Fit score for this specific business (1-100)
+        - Required investment and timeline
+        - Expected ROI and risks
+        - Specific action steps
+        - Resource requirements
+        
+        Rank opportunities by potential impact on business goals.
+        Format as JSON array.
+        """
+        
+        response = self.client.chat.completions.create(
+            model=config.OPENAI_MODEL,
+            messages=[
+                {"role": "system", "content": "You are a business opportunity analyst."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=2000,
+            temperature=0.6
+        )
+        
+        try:
+            return json.loads(response.choices[0].message.content)
+        except json.JSONDecodeError:
+            return [{"analysis": response.choices[0].message.content}]
+    
+    def _analyze_qualified_leads(self, scraped_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze and prioritize leads for this specific business"""
+        
+        leads_data = scraped_data.get("leads", [])
+        
+        prompt = f"""
+        {self.custom_prompts["lead_qualification"]}
+        
+        Available Leads:
+        {json.dumps(leads_data, indent=2)}
+        
+        For each lead, provide:
